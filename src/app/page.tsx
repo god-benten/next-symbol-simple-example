@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SymbolSDKOnServer from "./SymbolSDKOnServer";
+import SymbolSDKOnClient from "./SymbolSDKOnClient";
 
 export default function Home() {
   return (
@@ -18,10 +19,16 @@ export default function Home() {
             priority
           />
         </div>
-        <dl>
+        <dl className="mb-4">
           <dt className="text-lg">Symbol SDK on Server</dt>
           <dd>
             <SymbolSDKOnServer/>
+          </dd>
+        </dl>
+        <dl>
+          <dt className="text-lg">Symbol SDK on Client</dt>
+          <dd>
+            <SymbolSDKOnClient/>
           </dd>
         </dl>
       </div>
